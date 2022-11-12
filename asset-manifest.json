@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "https://mkalish.github.io/laras-lovely-rubric-machine/static/css/main.073c9b0a.css",
-    "main.js": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/main.87e5ab06.js",
+    "main.js": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/main.6319ef19.js",
     "static/js/787.44ad962d.chunk.js": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/787.44ad962d.chunk.js",
     "static/media/logo.svg": "https://mkalish.github.io/laras-lovely-rubric-machine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "https://mkalish.github.io/laras-lovely-rubric-machine/index.html",
     "main.073c9b0a.css.map": "https://mkalish.github.io/laras-lovely-rubric-machine/static/css/main.073c9b0a.css.map",
-    "main.87e5ab06.js.map": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/main.87e5ab06.js.map",
+    "main.6319ef19.js.map": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/main.6319ef19.js.map",
     "787.44ad962d.chunk.js.map": "https://mkalish.github.io/laras-lovely-rubric-machine/static/js/787.44ad962d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.87e5ab06.js"
+    "static/js/main.6319ef19.js"
   ]
 }
