@@ -40,7 +40,7 @@ function App() {
           <Stack direction={"column"} marginTop={5}>
             <Box>
               <FormControl>
-                <FormLabel>Assignment points value</FormLabel>
+                <FormLabel>Rubric Points Possible</FormLabel>
                 <Input
                   type="number"
                   onChange={(evt) =>
@@ -66,7 +66,7 @@ function App() {
             </Box>
             <Box>
               <FormControl>
-                <FormLabel>Score</FormLabel>
+                <FormLabel>Rubric Score</FormLabel>
                 <Input
                   type="number"
                   onChange={(evt) =>
