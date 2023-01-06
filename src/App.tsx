@@ -3,8 +3,6 @@ import "./App.css";
 import {
   ChakraProvider,
   Container,
-  Grid,
-  GridItem,
   Input,
   Heading,
   Divider,
@@ -13,6 +11,7 @@ import {
   Stack,
   Box,
 } from "@chakra-ui/react";
+import StudentScore from "./StudentScore";
 
 const calculateScore = (
   studentsScore: number,
@@ -30,7 +29,7 @@ const calculateScore = (
 function App() {
   const [possiblePoints, setPossiblePoints] = useState(50);
   const [possibleGradebookPoints, setPossibleGradebookPoints] = useState(50);
-  const [studentScore, setStudentScore] = useState<number | null>(null);
+  const [numberOfRows, setNumberOfRows] = useState(35);
   return (
     <ChakraProvider>
       <Container>
@@ -64,32 +63,15 @@ function App() {
                 />
               </FormControl>
             </Box>
-            <Box>
-              <FormControl>
-                <FormLabel>Rubric Score</FormLabel>
-                <Input
-                  type="number"
-                  onChange={(evt) =>
-                    setStudentScore(parseInt(evt.target.value, 10))
-                  }
-                  placeholder="Student Score"
+            <Divider />
+            {Array.apply(null, Array(numberOfRows)).map(() => {
+              return (
+                <StudentScore
+                  possibleGradebookPoints={possibleGradebookPoints}
+                  possibleRubricPoints={possiblePoints}
                 />
-              </FormControl>
-            </Box>
-            <Divider marginTop={10} marginBottom={10} />
-            <Box>
-              <Heading marginTop={5} as={"h2"}>
-                Assignment points value
-              </Heading>
-              <Heading as={"h3"}>
-                {studentScore &&
-                  calculateScore(
-                    studentScore,
-                    possiblePoints,
-                    possibleGradebookPoints
-                  )}
-              </Heading>
-            </Box>
+              );
+            })}
           </Stack>
         </div>
       </Container>
